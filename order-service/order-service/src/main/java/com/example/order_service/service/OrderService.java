@@ -12,7 +12,7 @@ public interface OrderService {
 
     public OrderDTO getOrderById(int orderId);
 
-    public OrderDTO update(int orderId, OrderDTO dto);
+    public OrderDTO updateOrder(int orderId, OrderDTO dto);
 
     public Boolean deleteOrder(int orderId);
 }
