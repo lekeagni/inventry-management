@@ -5,79 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de0bfc2-87b0-4c17-98ee-dd5608eae14f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/exception/InsufficientStockException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/FactureServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/FactureServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/controller/FactureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/controller/FactureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/dto/FactureDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/dto/FactureDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/model/FactureModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/model/FactureModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/service/ServiceImpl/FactureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/facture-service/src/main/java/com/example/facture_service/service/ServiceImpl/FactureServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../facture-service/target/generated-sources/annotations/com/example/facture_service/mapper/FactureMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../facture-service/target/generated-sources/annotations/com/example/facture_service/mapper/FactureMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/model/OrderModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/service/ServiceImpl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/order-service/src/main/java/com/example/order_service/service/ServiceImpl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/stock-service (1).iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/StockServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/dto/StockDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/exception/GlobalHandlerException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/exception/StockAlreadyExistException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/exception/StockNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/mapper/StockMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/model/ErrorException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/model/StockModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/repository/StockRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/service/ServiceImpl/StockServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/java/com/example/stock_service/service/StockService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock-service (1)/stock-service/src/test/java/com/example/stock_service/StockServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/user-service (1).iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/UserServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/exception/CustomException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/exception/UserAlreadyExistException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/exception/UserNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/model/ErrorException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/model/UserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/service/ServiceImpl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/java/com/example/user_service/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/test/java/com/example/user_service/UserIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/test/java/com/example/user_service/UserServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service (1)/user-service/src/test/java/com/example/user_service/serviceTest/UserServiceImplTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/example/payment_service/PaymentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/example/payment_service/PaymentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,19 +37,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.PaymentServiceApplication.executor": "Run",
-    "Application.StockServiceApplication.executor": "Run",
-    "JUnit.All in stock-service.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StockServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in stock-service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.PaymentServiceApplication">
     <configuration name="PaymentServiceApplication" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.example.payment_service.PaymentServiceApplication" />
