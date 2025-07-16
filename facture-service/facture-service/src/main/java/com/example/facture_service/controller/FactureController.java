@@ -34,13 +34,39 @@ public class FactureController {
     }
 
     @GetMapping()
+    @PostMapping("/save")
+    @Operation(summary = "get invoices", description = "get all the invoice in the database")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "get invoice successful"),
+            @ApiResponse(responseCode = "400", description = "failed to get invoice"),
+            @ApiResponse(responseCode = "500", description = "error server")
+    })
     public ResponseEntity<List<FactureDTO>> getAll(){
         return ResponseEntity.status(HttpStatus.OK).body(this.factureService.getAllFactures());
     }
 
     @GetMapping("/{factureId}")
+    @PostMapping("/save")
+    @Operation(summary = "get invoice", description = "get the invoice in the database by id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "get invoice successful"),
+            @ApiResponse(responseCode = "400", description = "failed to get invoice"),
+            @ApiResponse(responseCode = "500", description = "error server")
+    })
     public ResponseEntity<FactureDTO> getFacture(@PathVariable int factureId){
         return ResponseEntity.status(HttpStatus.OK).body(this.factureService.getFactureById(factureId));
+    }
+
+    @PutMapping("/update/{factureId}")
+    @PostMapping("/save")
+    @Operation(summary = "update the invoice", description = "update the invoice in the database")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "updated invoice successful"),
+            @ApiResponse(responseCode = "400", description = "failed to update invoice"),
+            @ApiResponse(responseCode = "500", description = "error server")
+    })
+    public ResponseEntity<FactureDTO> update(@PathVariable int factureId, @RequestBody FactureDTO dto){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(this.factureService.updateFacture(factureId, dto));
     }
 
     @DeleteMapping("/delete/{factureId}")

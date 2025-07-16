@@ -3,10 +3,7 @@ package com.example.order_service.service.ServiceImpl;
 import com.example.order_service.dto.OrderDTO;
 import com.example.order_service.dto.ProductDTO;
 import com.example.order_service.dto.UserDTO;
-import com.example.order_service.exception.OrderAlreadyExistException;
-import com.example.order_service.exception.OrderNotFoundException;
-import com.example.order_service.exception.ProductNotFoundException;
-import com.example.order_service.exception.UserNotFoundException;
+import com.example.order_service.exception.*;
 import com.example.order_service.feign.ProductFeignClient;
 import com.example.order_service.feign.UserFeignClient;
 import com.example.order_service.mapper.OrderMapper;
@@ -41,10 +38,13 @@ public class OrderServiceImpl implements OrderService {
         if (this.orderRepository.existsById(dto.getOrderId())) {
             throw new OrderAlreadyExistException(dto.getOrderId());
         }
+
+        ProductDTO productDTO;
+
         try {
-            ProductDTO productDTO = this.productFeignClient.getProductById(dto.getProductId());
-        }catch ( FeignException.NotFound e){
-                throw new ProductNotFoundException(dto.getProductId());
+            productDTO = this.productFeignClient.getProductById(dto.getProductId());
+        } catch (FeignException.NotFound e) {
+            throw new ProductNotFoundException(dto.getProductId());
         }
 
         try {
@@ -53,11 +53,19 @@ public class OrderServiceImpl implements OrderService {
             throw new UserNotFoundException(dto.getUserId());
         }
 
+        if (productDTO.getQuantity() < dto.getQuantity()){
+            throw new InsufficientStockException(dto.getProductId());
+        }
+
+        Double totalAmount = productDTO.getPrice() * dto.getQuantity();
+
         OrderModel orderModel = orderMapper.toEntity(dto);
         orderModel.setProductId(dto.getProductId());
         orderModel.setUserId(dto.getUserId());
         orderModel.setDate(LocalDateTime.now());
-        orderModel.setTotal_amount(dto.getAmount());
+        orderModel.setTotal_amount(totalAmount);
+
+        orderModel.setStatuts(" en_attente");
 
         return orderMapper.toDTO(this.orderRepository.save(orderModel));
     }
@@ -82,12 +90,8 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public OrderDTO updateOrder(int orderId, OrderDTO dto) {
 
-        OrderModel orderModel = this.orderRepository.findById(orderId)
+        OrderModel existingOrder = this.orderRepository.findById(orderId)
                 .orElseThrow(()->new OrderNotFoundException(orderId));
-
-        if(this.orderRepository.existsById(dto.getOrderId())){
-            throw new OrderNotFoundException(dto.getOrderId());
-        }
 
         ProductDTO productDTO = this.productFeignClient.getProductById(dto.getProductId());
         if (productDTO == null){
@@ -98,13 +102,24 @@ public class OrderServiceImpl implements OrderService {
         if (userDTO == null){
             throw new UserNotFoundException(dto.getUserId());
         }
+// verification de la quantité de stock
+        if (productDTO.getQuantity() < dto.getQuantity()){
+            throw new InsufficientStockException(dto.getProductId());
+        }
 
-        orderModel.setProductId(dto.getProductId());
-        orderModel.setUserId(dto.getUserId());
-        orderModel.setDate(LocalDateTime.now());
-        orderModel.setTotal_amount(dto.getAmount());
+        Double totalAmount = productDTO.getPrice() * dto.getQuantity();
 
-        return orderMapper.toDTO(this.orderRepository.save(orderModel));
+        existingOrder.setProductId(dto.getProductId());
+        existingOrder.setUserId(dto.getUserId());
+        existingOrder.setDate(LocalDateTime.now());
+        existingOrder.setQuantity(dto.getQuantity());
+        existingOrder.setTotal_amount(totalAmount);
+
+        if (existingOrder.getStatuts() == null || existingOrder.getStatuts().isEmpty()) {
+            existingOrder.setStatuts(" en_attente");
+        }
+
+        return orderMapper.toDTO(this.orderRepository.save(existingOrder));
     }
 
     @Override

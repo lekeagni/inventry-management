@@ -20,12 +20,14 @@ public class OrderModel {
     private int orderId;
     private int userId;
     private int productId;
+    @Column(name = "QUANTITY", nullable = false)
+    private int quantity;
     @Column(name = "DATE",nullable = false)
     private LocalDateTime date;
 
     @Column(name = "TOTAL_AMOUNT",nullable = false,length = 10)
     private Double total_amount;
 
-    @Column(name = "STATUTS",nullable = false, columnDefinition = "VARCHAR(255) DEFAULT 'attente' ")
+    @Column(name = "STATUTS",nullable = false, columnDefinition = "VARCHAR(255) DEFAULT ' en attente' ")
     private String statuts;
 }

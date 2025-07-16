@@ -1,6 +1,5 @@
 package com.example.order_service.dto;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,6 +15,6 @@ public class OrderDTO {
     private int orderId;
     private int userId;
     private int productId;
+    private int quantity;
     private LocalDateTime date;
-    private Double amount;
 }

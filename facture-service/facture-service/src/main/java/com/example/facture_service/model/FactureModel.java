@@ -25,6 +25,6 @@ public class FactureModel {
     @Column(name = "PRICE",nullable = false)
     private Double price;
 
-    @Column(name = "STATUS",nullable = false, columnDefinition = " VARCHAR(255) DEFAULT 'en attente' ")
+    @Column(name = "STATUS",nullable = false)
     private String status;
 }

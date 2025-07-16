@@ -5,17 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class OrderDTO {
-    private int orderId;
-    private int userId;
+public class ProductDTO {
+
     private int productId;
+    private int categoryId;
+    private int userId;
+    private String name;
+    private String description;
+    private Double price;
     private int quantity;
-    private LocalDateTime date;
-    private Double total_amount;
 }

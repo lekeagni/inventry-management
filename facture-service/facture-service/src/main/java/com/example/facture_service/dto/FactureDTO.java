@@ -15,6 +15,4 @@ public class FactureDTO {
     private int factureId;
     private int orderId;
     private LocalDateTime date;
-    private Double price;
-    private String status;
 }

@@ -43,9 +43,19 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorException>handlerOrderAlreadyExistException(OrderAlreadyExistException exception){
         ErrorException errorException = ErrorException.builder()
                 .localDateTime(LocalDateTime.now())
-                .httpStatus(HttpStatus.NOT_FOUND.value())
+                .httpStatus(HttpStatus.CONFLICT.value())
                 .message(exception.getMessage())
                 .build();
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorException);
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(errorException);
+    }
+
+    @ExceptionHandler(InsufficientStockException.class)
+    public ResponseEntity<ErrorException>handlerInsufficientStockException(InsufficientStockException exception){
+        ErrorException errorException = ErrorException.builder()
+                .localDateTime(LocalDateTime.now())
+                .httpStatus(HttpStatus.CONFLICT.value())
+                .message(exception.getMessage())
+                .build();
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(errorException);
     }
 }
