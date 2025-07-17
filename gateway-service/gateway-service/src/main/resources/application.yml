@@ -48,9 +48,9 @@ spring:
           predicates:
             Path:/factures/**
 
-        -id: payment-service
-         uri: lb://PAYMENT-SERVICE
-         predicates:
+        - id: payment-service
+          uri: lb://PAYMENT-SERVICE
+          predicates:
             Path:/payments/**
 
         - id: eureka-server
